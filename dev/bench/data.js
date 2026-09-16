@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785650302272,
+  "lastUpdate": 1789544113537,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22439,6 +22439,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 865985,
             "range": "± 7359",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "c.desaintguilhem@gmail.com",
+            "name": "Cyprien de Saint Guilhem",
+            "username": "cdesaintguilhem"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f69bb4825e5d2b8d055257da4a01b46c48f7570",
+          "message": "feat: add fill-sentence wrap mode (#500)\n\nAdds `wrap_mode = \"fill-sentence\"` / `--wrap-text=fill-sentence`, a middle ground between `fill` and `sentence`: like `sentence`, it forces a hardline at each sentence boundary, but like `fill`, it reflows each sentence's words to the print width instead of leaving it as a single unbounded line or preserving the source's manual line breaks.",
+          "timestamp": "2026-09-16T15:31:39+08:00",
+          "tree_id": "d1c61282a41730a5c0ab04e671d738fcc8b11fca",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/0f69bb4825e5d2b8d055257da4a01b46c48f7570"
+        },
+        "date": 1789544113247,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 819755,
+            "range": "± 14229",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11598236,
+            "range": "± 1333754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 717027,
+            "range": "± 11576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1703721,
+            "range": "± 22299",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 500532,
+            "range": "± 3281",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1192647,
+            "range": "± 20521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3198622,
+            "range": "± 18682",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 2053581,
+            "range": "± 11056",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1148769,
+            "range": "± 11947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 16845,
+            "range": "± 125",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 853833,
+            "range": "± 5921",
             "unit": "ns/iter"
           }
         ]
