@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789544113537,
+  "lastUpdate": 1790668771740,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22529,6 +22529,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 853833,
             "range": "± 5921",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "humtta@proton.me",
+            "name": "Hugo Marotta",
+            "username": "humtta"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "57a34b781e4df8a9ae048a6212a43d9586033fd6",
+          "message": "fix: Restore CI badge link",
+          "timestamp": "2026-09-29T15:56:24+08:00",
+          "tree_id": "554ee8e069b2e82be8ae01f62872f9b5b11c0fdb",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/57a34b781e4df8a9ae048a6212a43d9586033fd6"
+        },
+        "date": 1790668771322,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 405436,
+            "range": "± 13245",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 8367967,
+            "range": "± 1638161",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 384368,
+            "range": "± 16689",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1027506,
+            "range": "± 14828",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 245774,
+            "range": "± 7393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 688114,
+            "range": "± 6480",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2114732,
+            "range": "± 125020",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1279935,
+            "range": "± 79759",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 656182,
+            "range": "± 13385",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 10116,
+            "range": "± 746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 454578,
+            "range": "± 3922",
             "unit": "ns/iter"
           }
         ]
