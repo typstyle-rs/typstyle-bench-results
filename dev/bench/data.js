@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791081638661,
+  "lastUpdate": 1791120856247,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22709,6 +22709,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 816275,
             "range": "± 4106",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "8e5463d58c127f348c1965f548d863b3d04d7548",
+          "message": "fix(ci): preserve and validate benchmark results\r\n\r\n`Swatinem/rust-cache` removes JSON under `target` during restore and\r\npost-job cleanup. Leftover Criterion baseline directories trigger\r\nmissing-file errors inside `bencher` result lines, which breaks master\r\npublishing. Post-job cleanup also damages results before `actions/cache`\r\nsaves its paths, preventing reliable reuse after a successful run.\r\n\r\nStore Criterion measurements, bloat data, and environment metadata in\r\n`benchmark-results` outside `target`. Set `CRITERION_HOME` in both\r\nworkflows and upload the directory with the existing artifact layout.\r\nUse the `criterion-v3-` cache prefix to exclude damaged entries and\r\nignore generated results.\r\n\r\nUse one validator for fresh output and cache reuse. Require complete\r\n`sample.json`, `estimates.json`, and `benchmark.json` plus valid bloat\r\ndata; check `benchmark-environment.json` before upload. Invalid caches\r\nrerun, and `cargo bloat` failures fail the producing job. Select targets\r\nwith `cargo bench -p typstyle-core --benches` and propagate master\r\npipeline failures through `tee`.\r\n\r\nPin base/head measurements to exact PR commit SHAs. `workflow_dispatch`\r\nrequires `pr_number`, resolves its repositories and commits, preserves\r\nboolean `force_rerun` inputs, and generates a comparison report. Include\r\nCLI sources in the combined benchmark/bloat cache hash and align\r\ntrigger paths with CLI, fixture, compiler-config, and report changes.\r\n\r\nPreserve crate-size differences when `diff` returns `1`. Treat other\r\nnonzero statuses as errors instead of publishing empty details.\r\n\r\nValidation: reproduced malformed Criterion output and checked the\r\npublishing parser; exercised cache cleanup/save/restore, forced reruns,\r\nincomplete fresh results, invalid JSON, and metadata mismatch. Real\r\n`critcmp` generates a merged report with crate-size differences. PR\r\nsnapshot/manual resolution and tool-failure cases pass focused checks.\r\nBoth benchmark targets compile. Only representative cases ran;\r\nGitHub CI execution of these changes remains unverified.",
+          "timestamp": "2026-10-04T21:30:50+08:00",
+          "tree_id": "e48f2ba8a5544cf0ce85635fbdba4eca0c3579ca",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/8e5463d58c127f348c1965f548d863b3d04d7548"
+        },
+        "date": 1791120855785,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 870115,
+            "range": "± 6019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 13921052,
+            "range": "± 1890779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 703858,
+            "range": "± 7200",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1619125,
+            "range": "± 12066",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 475002,
+            "range": "± 12503",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1128243,
+            "range": "± 18982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3040415,
+            "range": "± 20522",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1924114,
+            "range": "± 26545",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1088208,
+            "range": "± 32541",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15930,
+            "range": "± 100",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 819613,
+            "range": "± 6299",
             "unit": "ns/iter"
           }
         ]
