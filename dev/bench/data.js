@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791120856247,
+  "lastUpdate": 1791125308843,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22799,6 +22799,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 819613,
             "range": "± 6299",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "2e67a6c03b7f14d5354d01eb7a0c9d54683a83f3",
+          "message": "fix: preserve source source trailing whitespace\n\nGlobal line-end trimming removes meaningful whitespace from multiline\nstrings, raw blocks, and format-disabled content.\n\nUse deferred indentation for full documents, partial formatting, and\nmath-cell rendering. Use weak spaces for generated flow separators so\nblank lines retain their breaks without layout padding.\n\nHandle the document's final newline in the markup layout. Trim line\ncomment ends and bullet block-comment lines during comment formatting\ninstead of applying cleanup to all rendered text.\n\nUpdate snapshots and add regressions for literal whitespace, nested\nblank lines, partial formatting, and document termination.",
+          "timestamp": "2026-10-04T22:45:05+08:00",
+          "tree_id": "1e8f232c096720012c25624d73fdf5920ae64153",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/2e67a6c03b7f14d5354d01eb7a0c9d54683a83f3"
+        },
+        "date": 1791125308425,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 834402,
+            "range": "± 20415",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 12685790,
+            "range": "± 1280884",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 656004,
+            "range": "± 16093",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1588786,
+            "range": "± 12472",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 453372,
+            "range": "± 5774",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1112771,
+            "range": "± 22129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2958685,
+            "range": "± 17302",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1902492,
+            "range": "± 19736",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1060171,
+            "range": "± 10340",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15297,
+            "range": "± 152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 805838,
+            "range": "± 13455",
             "unit": "ns/iter"
           }
         ]
