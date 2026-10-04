@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790668771740,
+  "lastUpdate": 1791081638661,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22619,6 +22619,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 454578,
             "range": "± 3922",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "8970faa7505d748ba460531bfd99b2a9251cb100",
+          "message": "ci: reject incompatible benchmark comparisons\n\nResolve Rust before cache lookup and key results by compiler, runner,\nRust flags, source, manifests, fixtures, and workflow. Upload\nenvironment metadata and reject mismatched comparisons before generating\na regression report. Merge only Criterion data.",
+          "timestamp": "2026-10-04T10:36:59+08:00",
+          "tree_id": "e6d681c5496d1e80553af46f501ec17fe4c0abeb",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/8970faa7505d748ba460531bfd99b2a9251cb100"
+        },
+        "date": 1791081638452,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 791282,
+            "range": "± 19892",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11054483,
+            "range": "± 641430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 691215,
+            "range": "± 10056",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1624994,
+            "range": "± 18505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 471989,
+            "range": "± 14440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1135731,
+            "range": "± 53696",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3057885,
+            "range": "± 23644",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1950053,
+            "range": "± 244054",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1093349,
+            "range": "± 10057",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15910,
+            "range": "± 102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 816275,
+            "range": "± 4106",
             "unit": "ns/iter"
           }
         ]
