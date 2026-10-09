@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791125308843,
+  "lastUpdate": 1791560768615,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22889,6 +22889,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 805838,
             "range": "± 13455",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "ffb284902830bf33be34674d840cd01683ad3cc6",
+          "message": "fix(ci): skip comments without benchmark results\n\nDuplicate detection can skip the benchmark job while the PR workflow\nstill concludes successfully.\n\nUse the download action's existing `if_no_artifact_found=ignore` option\nand `found_artifact` output. Read the report and PR number only after a\nsuccessful artifact download. The existing PR-number conditions then\nskip both comment actions when no results exist. Keep the exact\ntriggering run ID, upstream comment presentation, and normal artifact\nprocessing. API and download errors still fail; an artifact missing its\nreport still uses the existing error.",
+          "timestamp": "2026-10-09T23:43:30+08:00",
+          "tree_id": "42aee3b708f98d3e7e567def493e398e9f406818",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/ffb284902830bf33be34674d840cd01683ad3cc6"
+        },
+        "date": 1791560768025,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 606105,
+            "range": "± 10853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 9932011,
+            "range": "± 1249213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 468172,
+            "range": "± 11756",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1207653,
+            "range": "± 11576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 289675,
+            "range": "± 4092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 809322,
+            "range": "± 9334",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2346715,
+            "range": "± 13482",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1461637,
+            "range": "± 38478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 778761,
+            "range": "± 8994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 12321,
+            "range": "± 167",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 562646,
+            "range": "± 5700",
             "unit": "ns/iter"
           }
         ]
