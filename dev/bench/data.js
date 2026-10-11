@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791715791250,
+  "lastUpdate": 1791728726771,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23249,6 +23249,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 837431,
             "range": "± 21282",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38c502baf487dab3ee3ad5ff5697e9e4cb7bb561",
+          "message": "chore: update dependencies and prepare release v0.15.2 (#516)\n\n* chore(deps): update dependencies\n\nUpdate wasm-minimal-protocol to published v0.2.1, prettyless to v0.4.0,\npath-absolutize to v4.0.1.\n\n* chore: prepare v0.15.2",
+          "timestamp": "2026-10-11T22:22:11+08:00",
+          "tree_id": "2fa300d13826694fea0e2b78090e18e12f117f8c",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/38c502baf487dab3ee3ad5ff5697e9e4cb7bb561"
+        },
+        "date": 1791728726563,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 833589,
+            "range": "± 8332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11214719,
+            "range": "± 380479",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 658446,
+            "range": "± 3553",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1598983,
+            "range": "± 16377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 453353,
+            "range": "± 2640",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1118285,
+            "range": "± 21459",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2997432,
+            "range": "± 26673",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1917242,
+            "range": "± 17864",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1066586,
+            "range": "± 10523",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15710,
+            "range": "± 227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 806202,
+            "range": "± 11237",
             "unit": "ns/iter"
           }
         ]
