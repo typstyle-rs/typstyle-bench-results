@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791707896677,
+  "lastUpdate": 1791715791250,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23159,6 +23159,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 569055,
             "range": "± 6643",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "44160838+Gravifer@users.noreply.github.com",
+            "name": "Tci Gravifer Fang",
+            "username": "Gravifer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78b36bf65a49a67e2da8ca5cf9120900dbaf23c1",
+          "message": "feat: add configurable line endings\n\nAdd `lf`, `crlf`, and default `preserve` line-ending policies to the core\nformatter and CLI through `--line-ending`.\n\nEmit generated breaks through prettyless render options while preserving\nliteral source text. Preserve CRLF for consistently CRLF input and use LF\notherwise. Range formatting detects endings from the whole document.\n\nApply the policy consistently to stdout, in-place formatting, `--check`,\nand `--diff`. Keep diff control lines LF.",
+          "timestamp": "2026-10-11T18:47:06+08:00",
+          "tree_id": "993667b816d02d660f11f95443ecb5ddd3364142",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/78b36bf65a49a67e2da8ca5cf9120900dbaf23c1"
+        },
+        "date": 1791715791037,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 871423,
+            "range": "± 7994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11302688,
+            "range": "± 373599",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 677841,
+            "range": "± 4084",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1657967,
+            "range": "± 19868",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 485858,
+            "range": "± 18788",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1170954,
+            "range": "± 30286",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3144503,
+            "range": "± 23600",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1972541,
+            "range": "± 24747",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1116205,
+            "range": "± 19209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 16119,
+            "range": "± 73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 837431,
+            "range": "± 21282",
             "unit": "ns/iter"
           }
         ]
