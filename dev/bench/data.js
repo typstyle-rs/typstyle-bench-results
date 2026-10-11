@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791560768615,
+  "lastUpdate": 1791697307957,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -22979,6 +22979,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 562646,
             "range": "± 5700",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "b67653b042c8c7e95d9fe7efcb966579cdda233b",
+          "message": "fix(partial): retain boundary separators in partial code edits\n\nCode-list rendering drops separators because line breaks separate full\nblock expressions. At the edge of a replacement that is wrong: a\ntrailing semicolon or comment may be the only thing keeping the\nformatted fragment apart from the following expression, so applying the\nedit could merge statements or produce invalid syntax.\n\nRender leading and trailing non-expression trivia verbatim around the\nformatted list, falling back to the original text when the selection has\nno expression at all.",
+          "timestamp": "2026-10-11T13:39:16+08:00",
+          "tree_id": "d71c773ff68ea378a2bf51efa10edb9063b31362",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/b67653b042c8c7e95d9fe7efcb966579cdda233b"
+        },
+        "date": 1791697307597,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 439416,
+            "range": "± 7278",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 7388567,
+            "range": "± 429649",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 341448,
+            "range": "± 12754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 921029,
+            "range": "± 58532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 239438,
+            "range": "± 4811",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 645923,
+            "range": "± 21722",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 1927496,
+            "range": "± 106712",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1134777,
+            "range": "± 70140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 571765,
+            "range": "± 17242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 9944,
+            "range": "± 395",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 437734,
+            "range": "± 16461",
             "unit": "ns/iter"
           }
         ]
