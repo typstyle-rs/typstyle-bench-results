@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791728726771,
+  "lastUpdate": 1792199470189,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23339,6 +23339,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 806202,
             "range": "± 11237",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "a2f40218a837ddfad2efca8f850449497bb757c2",
+          "message": "fix(build): resolve WASM build failure and CI checks\n\nAdded the missing `full` feature for syn in typstyle-wasm and bumped syn\nto 3.0.\n\nFixed the path filters in gh-pages workflow, which excluded manifests\nbefore.",
+          "timestamp": "2026-10-17T09:07:18+08:00",
+          "tree_id": "0edf193adc6f3b7d713abf000cf1b62542d0cdf0",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/a2f40218a837ddfad2efca8f850449497bb757c2"
+        },
+        "date": 1792199469811,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 844874,
+            "range": "± 6447",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11429508,
+            "range": "± 2664355",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 666704,
+            "range": "± 5614",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1629883,
+            "range": "± 23379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 469880,
+            "range": "± 3081",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1144630,
+            "range": "± 11419",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3049784,
+            "range": "± 24646",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1958749,
+            "range": "± 28527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1100821,
+            "range": "± 27983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15981,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 821084,
+            "range": "± 5932",
             "unit": "ns/iter"
           }
         ]
