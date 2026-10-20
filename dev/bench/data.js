@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792199470189,
+  "lastUpdate": 1792493246965,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23429,6 +23429,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 821084,
             "range": "± 5932",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "80774326+cristianchiriac@users.noreply.github.com",
+            "name": "cristianchiriac",
+            "username": "cristianchiriac"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "61c4dde1688786f37e0a7754c9824dbd9504e6a7",
+          "message": "fix: parse enum marker numbers as u64\n\nThe Typst lexer accepts enum markers whose number fits in a u64.\nis_enum_marker parsed them as usize, so on 32-bit targets markers above\nu32::MAX were not recognized and text wrapping could break before them,\nwhich failed the enum_marker_glues snapshot.\n\nCloses #506",
+          "timestamp": "2026-10-20T18:44:41+08:00",
+          "tree_id": "4eca1beca01cc8f33c3af484d848feb59da0bf46",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/61c4dde1688786f37e0a7754c9824dbd9504e6a7"
+        },
+        "date": 1792493246712,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 850051,
+            "range": "± 19965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11205534,
+            "range": "± 213041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 670038,
+            "range": "± 3499",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1608162,
+            "range": "± 29484",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 465356,
+            "range": "± 3156",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1136751,
+            "range": "± 19985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3026864,
+            "range": "± 18595",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1927916,
+            "range": "± 16822",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1086435,
+            "range": "± 13114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15939,
+            "range": "± 70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 818508,
+            "range": "± 12169",
             "unit": "ns/iter"
           }
         ]
