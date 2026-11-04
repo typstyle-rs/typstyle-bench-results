@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792493246965,
+  "lastUpdate": 1793770900065,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23519,6 +23519,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 818508,
             "range": "± 12169",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c4b4fb4a3ea732e6afe98162382d9220308b6fa",
+          "message": "fix(math): keep a semicolon that ends `#`-prefixed code attached (#523)\n\nIn math, a semicolon written directly after `#`-prefixed code terminates\nthat code instead of separating rows. The argument list treated every\nsemicolon that followed a hashed argument as a row separator and put a\nspace before it, so `$mat(#n;; #k)$` (one separator) was formatted as\n`$mat(#n ;; #k)$` (two), adding an empty row to the matrix.\n\nHandle the terminator where hashed expressions are already consumed: the\nshared flow traversal now switches the child after `#` to code mode and\nkeeps an immediately adjacent semicolon tight. Flow callbacks no longer\nreceive hash and line-comment history; they get the effective context of\neach child, which the math consumers use to detect code.\n\nAlso switched the callback to `&mut dyn` for lower build size.\n\n---------\n\nCo-authored-by: Wleeaf <179125857+wleeaf@users.noreply.github.com>",
+          "timestamp": "2026-11-04T13:38:24+08:00",
+          "tree_id": "c4a7714f129b8ac6a92fdfc722107b291f66ceca",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/5c4b4fb4a3ea732e6afe98162382d9220308b6fa"
+        },
+        "date": 1793770899870,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 855597,
+            "range": "± 15268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11155036,
+            "range": "± 158221",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 673307,
+            "range": "± 16925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1651695,
+            "range": "± 45177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 472370,
+            "range": "± 9723",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1143141,
+            "range": "± 38182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3083574,
+            "range": "± 69034",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1977066,
+            "range": "± 56864",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1121435,
+            "range": "± 18041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15171,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 847017,
+            "range": "± 12249",
             "unit": "ns/iter"
           }
         ]
