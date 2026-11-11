@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793770900065,
+  "lastUpdate": 1794399816438,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23609,6 +23609,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 847017,
             "range": "± 12249",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "0477ccb94092ad7dde69b0d72f9618598707a61f",
+          "message": "docs: add Jujutsu integration guide\n\nDocument how to use typstyle with `jj fix`. Mirror the setup in the README.",
+          "timestamp": "2026-11-11T20:20:13+08:00",
+          "tree_id": "978b3860c4a46e32f7cf71ea244af88cfb6d7d92",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/0477ccb94092ad7dde69b0d72f9618598707a61f"
+        },
+        "date": 1794399816102,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 855056,
+            "range": "± 7589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11394063,
+            "range": "± 241531",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 668320,
+            "range": "± 16071",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1635026,
+            "range": "± 19268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 469197,
+            "range": "± 5074",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1159157,
+            "range": "± 14320",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3051704,
+            "range": "± 27395",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1957719,
+            "range": "± 38194",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1108941,
+            "range": "± 33583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15170,
+            "range": "± 291",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 836075,
+            "range": "± 11432",
             "unit": "ns/iter"
           }
         ]
