@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794399816438,
+  "lastUpdate": 1794571249162,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23699,6 +23699,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 836075,
             "range": "± 11432",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "5f6377b879060524e451fb7f6844124d45572ffd",
+          "message": "fix(markup): keep sentence-ending linebreaks on their line\n\nSentence-based wrapping moved a `\\` linebreak that followed a sentence\nto the next line, making the break look like it started the following\nsentence. Attach the linebreak to the sentence it terminates in\n`sentence` and `fill-sentence` modes, and emit the break after it. This\ncovers both a `\\` directly after the punctuation and one separated from\nit by a space.\n\nNormalize the spacing before an attached linebreak to one space. Leading\nlinebreaks and linebreaks inside a sentence keep their current layout.",
+          "timestamp": "2026-11-13T19:57:37+08:00",
+          "tree_id": "9513dfe451b04beb24520615b4233a1240f59484",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/5f6377b879060524e451fb7f6844124d45572ffd"
+        },
+        "date": 1794571248642,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 623961,
+            "range": "± 6220",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 9514246,
+            "range": "± 200790",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 476494,
+            "range": "± 3089",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1235077,
+            "range": "± 12832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 295679,
+            "range": "± 2784",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 836840,
+            "range": "± 4473",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2382078,
+            "range": "± 13527",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1498396,
+            "range": "± 14630",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 811107,
+            "range": "± 5301",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 11724,
+            "range": "± 47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 577948,
+            "range": "± 8308",
             "unit": "ns/iter"
           }
         ]
