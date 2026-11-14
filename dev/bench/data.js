@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794571249162,
+  "lastUpdate": 1794624739407,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23789,6 +23789,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 577948,
             "range": "± 8308",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "f6db820852f353a2d20d7d363ea587bffbec7497",
+          "message": "feat(cli): format selected line ranges\n\n`jj fix` streams file contents through stdin and can restrict tools to\nthe lines changed by each commit. Typstyle had no CLI option for partial\nformatting, so it could only reformat whole files.\n\nAdd a repeatable `--lines FIRST:LAST` option for 1-based inclusive line\nnumbers. Selected ranges go through the core range formatter, which\nexpands them to enclosing syntax nodes and merges overlapping ones. The\ncomplete document is emitted with only the selected ranges changed. The\noption accepts stdin or a single file and composes with `--check`,\n`--diff`, and `--inplace`.",
+          "timestamp": "2026-11-14T10:49:31+08:00",
+          "tree_id": "e476d77900a71cde348784973bee9fa15b441db4",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/f6db820852f353a2d20d7d363ea587bffbec7497"
+        },
+        "date": 1794624738921,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 857889,
+            "range": "± 24763",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 12809927,
+            "range": "± 2284528",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 669635,
+            "range": "± 6832",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1656346,
+            "range": "± 14346",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 484696,
+            "range": "± 5886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1161457,
+            "range": "± 24039",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3072564,
+            "range": "± 159742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1966896,
+            "range": "± 24945",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1116961,
+            "range": "± 37729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 14960,
+            "range": "± 50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 834273,
+            "range": "± 5490",
             "unit": "ns/iter"
           }
         ]
