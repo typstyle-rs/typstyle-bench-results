@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794624739407,
+  "lastUpdate": 1794669973143,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -23879,6 +23879,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 834273,
             "range": "± 5490",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "23ffb2142d7c27b247e963c2beccb028b7cfb69a",
+          "message": "fix(markup): keep commented block markers on their own line\n\nReflow counted a comment as line content, so a comment written beside a\nblock marker hid it from the exclusivity check. Joining the line then\nturned a heading, list item, enum item, or term item into literal text,\nsilently changing the parsed structure with it.\n\nJudge a line by its significant nodes, ignoring the spaces and comments\naround them. A line holding only comments also stays exclusive, since\njoining a line comment onto the next line would absorb it.\n\nRestrict the widened check to block markup. Comments beside ordinary\nprose carry no structure, so that text keeps reflowing as before.",
+          "timestamp": "2026-11-14T23:23:28+08:00",
+          "tree_id": "80fe7962c8f717fe564ff7227d8843b9cde510fa",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/23ffb2142d7c27b247e963c2beccb028b7cfb69a"
+        },
+        "date": 1794669972636,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 795330,
+            "range": "± 6714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11636713,
+            "range": "± 127799",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 651103,
+            "range": "± 9612",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1614916,
+            "range": "± 15566",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 447654,
+            "range": "± 2785",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1120092,
+            "range": "± 11950",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3122069,
+            "range": "± 18356",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1976601,
+            "range": "± 17168",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1079493,
+            "range": "± 16166",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 14933,
+            "range": "± 60",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 814871,
+            "range": "± 3429",
             "unit": "ns/iter"
           }
         ]
