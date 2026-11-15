@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794672057554,
+  "lastUpdate": 1794701451075,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24059,6 +24059,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 853647,
             "range": "± 3144",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a4776429e76e85f43f815d9b9074f081765af99",
+          "message": "build(playground): update npm dependencies and Biome config (#531)\n\nUpdate the playground's npm dependencies, including major bumps to\n`query-string` 10, TypeScript 7, Vitest 5, `@types/node` 26, and\n`monaco-editor` 0.57.\n\nVite 8 supports top-level await natively, so drop\n`vite-plugin-top-level-await`: its SWC pass crashes on the\nrolldown-based build in Vite 8.3 (`missing field 'type'`). The WASM\nglue still relies on TLA, but the bundler now emits it unchanged.\n\nEnable Biome's VCS integration with `useIgnoreFile`, so ignore files\ngovern the scanned tree and generated output such as `dist` is not\nlinted. Replace the deprecated `linter.rules.recommended` with\n`linter.rules.preset` and point `$schema` at 2.6.7.\n\nUse `import.meta.dirname` in the Vite config to silence the config\nloader warning about `__dirname`, and apply Biome 2.6.7's formatting\nto the affected source files.\n\nVitest runs the jsdom suites in Node, where the WASM plugin's\nbrowser-relative asset URL can fail before tests are collected. Use\nVite's built-in WASM loader and set the client environment's consumer\nto server when Vitest runs so the loader reads the binary from disk.\nKeep the usual browser asset loading for development and production and\nremove the unused plugin dependency.",
+          "timestamp": "2026-11-15T08:08:04+08:00",
+          "tree_id": "815558f93b597f6deedef7dbfb7ed28eecf26751",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/5a4776429e76e85f43f815d9b9074f081765af99"
+        },
+        "date": 1794701450848,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 863637,
+            "range": "± 31425",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11199297,
+            "range": "± 59875",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 669532,
+            "range": "± 14131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1648679,
+            "range": "± 11780",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 492782,
+            "range": "± 4451",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1179099,
+            "range": "± 18925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3045502,
+            "range": "± 16521",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1971057,
+            "range": "± 22323",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1114611,
+            "range": "± 13233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15133,
+            "range": "± 47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 823776,
+            "range": "± 6538",
             "unit": "ns/iter"
           }
         ]
