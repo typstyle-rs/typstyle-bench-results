@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795590431939,
+  "lastUpdate": 1795591595058,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24329,6 +24329,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 641900,
             "range": "± 1307",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "718aa95b2398d6a8d36d0d79e5f819a688520718",
+          "message": "test(e2e): reuse cached checkouts only at the pinned revision\n\nRepository e2e tests reused any existing directory, so a stale or\nmissing revision silently tested the wrong sources. A checkout is now\nreused only when it is the root of a work tree at the expected\nrevision; otherwise the cached directory is removed and cloned again,\nand the result is validated after checkout.\n\nRepository trials kept their checkouts in `tests/e2e`, which mixed\ngenerated state with tracked fixtures. Move them below\n`tests/.cache/repos` and ignore the cache directory. The `tests/e2e`\ndirectory stays ignored so existing checkouts are not mistaken for\ntracked content.",
+          "timestamp": "2026-11-25T15:23:53+08:00",
+          "tree_id": "c23d4152db845c3bec6c70f4cdd02da5dc91380b",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/718aa95b2398d6a8d36d0d79e5f819a688520718"
+        },
+        "date": 1795591594742,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 432205,
+            "range": "± 18400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 8627761,
+            "range": "± 1528532",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 342844,
+            "range": "± 17817",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 966390,
+            "range": "± 40840",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 232404,
+            "range": "± 17142",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 640496,
+            "range": "± 36551",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 1912682,
+            "range": "± 39152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1197711,
+            "range": "± 56515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 615203,
+            "range": "± 11927",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 8827,
+            "range": "± 775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 447014,
+            "range": "± 25052",
             "unit": "ns/iter"
           }
         ]
