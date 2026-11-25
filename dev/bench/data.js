@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795597496106,
+  "lastUpdate": 1795601533786,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24509,6 +24509,102 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 600005,
             "range": "± 11857",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "a89d335bc50926073a0c6ef9623f38a14c2aefe5",
+          "message": "bench: measure the Typst docs corpus and report throughput\n\nAdd a `typst_docs` criterion target that formats the same pinned Typst\ndocumentation corpus as the docs end-to-end test. The corpus is loaded\nand parsed once before the timer, and each file is formatted\nindependently to match real document boundaries.\n\nDescribe the corpus acquisition and caching in the README, CLAUDE.md,\nand user and developer docs, along with the new benchmark commands.",
+          "timestamp": "2026-11-25T18:09:15+08:00",
+          "tree_id": "f055f7113d99abc36dcb76f5ed52558c10634777",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/a89d335bc50926073a0c6ef9623f38a14c2aefe5"
+        },
+        "date": 1795601533582,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 833380,
+            "range": "± 12029",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11186294,
+            "range": "± 312128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 665297,
+            "range": "± 16570",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1635300,
+            "range": "± 21110",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 470775,
+            "range": "± 4730",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1153580,
+            "range": "± 33343",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3058505,
+            "range": "± 24468",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1947657,
+            "range": "± 31063",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1108032,
+            "range": "± 16550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15371,
+            "range": "± 136",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 830135,
+            "range": "± 8952",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 9435495,
+            "range": "± 215829",
             "unit": "ns/iter"
           }
         ]
