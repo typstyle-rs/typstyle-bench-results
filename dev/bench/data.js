@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794702239724,
+  "lastUpdate": 1795590431939,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24239,6 +24239,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 603243,
             "range": "± 5340",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "cb73663f1d00f9998d11893d0d1e7a73f05397b9",
+          "message": "refactor(tests): separate the runner from reusable support\n\nThe custom runner and its suites lived beside the library that supplies\nsource reading and fixture directives. Move the runner to `runner/` and\nkeep reusable support in `src/`, with fixture inputs and snapshots\nremaining in `fixtures/`. The test target in `tests/Cargo.toml` follows\nthe new entry point, and the checkout ignore is scoped to the tests\ncrate.\n\nFixture paths now come from `fixtures::root()`, so the pretty-print\nbenchmark no longer reaches into `tests/fixtures` through a relative\npath. The repository end-to-end suite reads its cases through\n`include_str!` and uses the formatter configurations from the runner\nend-to-end module.",
+          "timestamp": "2026-11-25T15:03:47+08:00",
+          "tree_id": "5c2321a272570e11c89afac7a8b1905e77fa6508",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/cb73663f1d00f9998d11893d0d1e7a73f05397b9"
+        },
+        "date": 1795590431726,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 602106,
+            "range": "± 2648",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 10255166,
+            "range": "± 52013",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 508279,
+            "range": "± 1954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1201969,
+            "range": "± 18815",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 350361,
+            "range": "± 912",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 859569,
+            "range": "± 1439",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2496303,
+            "range": "± 6103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1478823,
+            "range": "± 9430",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 812417,
+            "range": "± 1173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 10064,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 641900,
+            "range": "± 1307",
             "unit": "ns/iter"
           }
         ]
