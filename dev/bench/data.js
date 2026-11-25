@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795591595058,
+  "lastUpdate": 1795597496106,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24419,6 +24419,96 @@ window.BENCHMARK_DATA = {
             "name": "pretty-ai-comprehensive-showcase",
             "value": 447014,
             "range": "± 25052",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "ac0f033f838a052632511da3b8ea59cf100e7be6",
+          "message": "test(e2e): cover the official Typst docs\n\nThe Typst docs are a large, prose-heavy corpus that cannot be compiled\nwith a stock Typst library because their build injects a `stdx` module\nfrom `typst-docs`. The `typst-docs` trial therefore checks the properties\nthat do not need compilation: every file parses, formats, and reaches a\nfixed point.\n\n`docs_corpus` acquires the pinned `v0.15.1` checkout with a sparse,\nblobless clone. The checkout is cached by revision under\n`tests/.cache/docs`, serialized with a per-revision lock file, staged in\na unique directory, and published by rename so concurrent runs never\nobserve a partial corpus or discard a valid checkout. A cached checkout\nis reused only when `lib.typ` exists and the checkout is at the pin; a\nstale entry is moved aside and removed before publishing the replacement.\n\nThe trial formats every file with the default and reflow configurations\nand collects all failures. The shared formatter also parses the first\npass once to report detailed syntax errors before running the second\npass with that parsed `Source`.",
+          "timestamp": "2026-11-25T17:02:19+08:00",
+          "tree_id": "da0c0aa0950d6c7570794d97ea21d9c1695907cb",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/ac0f033f838a052632511da3b8ea59cf100e7be6"
+        },
+        "date": 1795597495884,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 621854,
+            "range": "± 19469",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 9526241,
+            "range": "± 223025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 489573,
+            "range": "± 7765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1240825,
+            "range": "± 25779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 295260,
+            "range": "± 3859",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 839367,
+            "range": "± 29227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 2417526,
+            "range": "± 14443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1507212,
+            "range": "± 25335",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 833620,
+            "range": "± 27505",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 11949,
+            "range": "± 43",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 600005,
+            "range": "± 11857",
             "unit": "ns/iter"
           }
         ]
