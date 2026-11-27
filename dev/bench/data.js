@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795751413534,
+  "lastUpdate": 1795763436423,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24701,6 +24701,102 @@ window.BENCHMARK_DATA = {
             "name": "typst-docs/all",
             "value": 7067411,
             "range": "± 486006",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "f1ad396aeb11f2160db32bc28338a81506b3c0eb",
+          "message": "chore(scripts): sync the README CLI usage from the binary\n\nThe README's CLI usage block was copied by hand, so it drifted whenever\nan argument changed; the developer guide only reminded contributors to\nrefresh it. Generate the block from `typstyle -h` and verify it in CI.\n\n`scripts/sync-readme-cli-help.nu` rewrites the code block below a marker\ncomment and fails unless exactly one marker is present, so unrelated\nblocks are untouched. It runs `cargo run` itself and normalizes\n`typstyle.exe` to `typstyle` for Windows output; Nushell is already used\nby the repository's helper scripts. The block is found by the marker and\nliteral fences, so a longer fence is rejected rather than parsed.\n`just sync-readme-cli-help` updates the block, and `just check-cli-help`\nreports drift without writing. `just generate-cli-help` still produces\nthe long help used by the documentation.\n\nThe docs workflow installs Nushell and checks the block before building,\nand the developer guide documents the new recipes. GitHub Pages triggers\nnow cover the CLI crate, README, sync script, justfile, and Cargo files,\nso a stale block fails the PR that introduced it.",
+          "timestamp": "2026-11-27T15:07:56+08:00",
+          "tree_id": "16823bdd77bedef970b21d59a6243558755b12e7",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/f1ad396aeb11f2160db32bc28338a81506b3c0eb"
+        },
+        "date": 1795763436034,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 403918,
+            "range": "± 11979",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 8435854,
+            "range": "± 1019823",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 341509,
+            "range": "± 13737",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 923351,
+            "range": "± 22753",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 227586,
+            "range": "± 11580",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 665548,
+            "range": "± 24546",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 1984856,
+            "range": "± 20401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1209607,
+            "range": "± 28413",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 648417,
+            "range": "± 13501",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 9558,
+            "range": "± 210",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 464632,
+            "range": "± 9983",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 7925738,
+            "range": "± 485915",
             "unit": "ns/iter"
           }
         ]
