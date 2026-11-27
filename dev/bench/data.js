@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795783400755,
+  "lastUpdate": 1795783488715,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24893,6 +24893,102 @@ window.BENCHMARK_DATA = {
             "name": "typst-docs/all",
             "value": 9393034,
             "range": "± 126796",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "c24196eb3a79778dcca63a0e4dba7823ab18fa06",
+          "message": "docs: replace CLAUDE.md with AGENTS.md\n\n`CLAUDE.md` was Claude-specific and duplicated details that had drifted\nfrom the repo. Replace it with a concise, agent-agnostic `AGENTS.md`\nthat links to canonical docs and adds core invariants and guidelines.",
+          "timestamp": "2026-11-27T20:41:48+08:00",
+          "tree_id": "ea6878d696fc8a824fa92c5c746c9debe19965e5",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/c24196eb3a79778dcca63a0e4dba7823ab18fa06"
+        },
+        "date": 1795783488496,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 829099,
+            "range": "± 19264",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11735802,
+            "range": "± 1197401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 668073,
+            "range": "± 9037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1632469,
+            "range": "± 16734",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 468375,
+            "range": "± 9314",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1136554,
+            "range": "± 16883",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3020619,
+            "range": "± 37274",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1954832,
+            "range": "± 19272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1112491,
+            "range": "± 20214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 14786,
+            "range": "± 222",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 823382,
+            "range": "± 10177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 9451838,
+            "range": "± 206985",
             "unit": "ns/iter"
           }
         ]
