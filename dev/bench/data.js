@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795601533786,
+  "lastUpdate": 1795751413534,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24605,6 +24605,102 @@ window.BENCHMARK_DATA = {
             "name": "typst-docs/all",
             "value": 9435495,
             "range": "± 215829",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "bcbf1dae3c432f75b433116ff6facdfecf3bab7a",
+          "message": "chore: eliminate clippy warnings\n\nClippy flags the wasm crates: `wasm_func` generates an uninhabited error\narm for plugin functions returning a bare `Vec<u8>`, `FormatRangeResult`\nclones `Copy` fields, and `typstyle-typlugin` skips workspace lint\ninheritance.\n\nReturn `WasmResult` from `try_format` and `format_with_error` so the\nwrapper no longer matches an `Infallible` arm; the exported plugin\nprotocol is unchanged. Keep the plugin functions private since only the\n`#[export_name]` wrappers are exported, which also avoids `missing_docs`\non generated code, and inherit the workspace lints.\n\nScope `getter_with_clone` to the `text` field so `usize` fields are\nreturned by value instead of copied through `Clone`.",
+          "timestamp": "2026-11-27T11:47:29+08:00",
+          "tree_id": "dcff11deb4cb6a9b6c083421289c15d71061c3e2",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/bcbf1dae3c432f75b433116ff6facdfecf3bab7a"
+        },
+        "date": 1795751413249,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 456467,
+            "range": "± 25392",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 10941303,
+            "range": "± 2747878",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 353760,
+            "range": "± 6356",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1004303,
+            "range": "± 86985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 237091,
+            "range": "± 7365",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 657807,
+            "range": "± 12409",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 1976494,
+            "range": "± 52410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1211925,
+            "range": "± 42294",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 636657,
+            "range": "± 42827",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 9195,
+            "range": "± 174",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 451127,
+            "range": "± 70518",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 7067411,
+            "range": "± 486006",
             "unit": "ns/iter"
           }
         ]
