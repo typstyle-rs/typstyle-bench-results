@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795763436423,
+  "lastUpdate": 1795783400755,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24797,6 +24797,102 @@ window.BENCHMARK_DATA = {
             "name": "typst-docs/all",
             "value": 7925738,
             "range": "± 485915",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "e39fa809575a48d7ab88a81a4277ef14f8d69680",
+          "message": "docs: add contribution policy and align PR template\n\nDocument explicit contribution expectations in `CONTRIBUTING.md` so\nmaintainers can focus review time on well-motivated, understood PRs.\nThe policy requires author ownership of any LLM-assisted changes, a\nconcrete motivation, prior maintainer agreement on an issue for design\nor formatting-rule changes, active follow-through, and focused tests\nand docs for bug fixes and new features.\n\nStreamline `.github/pull_request_template.md` around motivation,\nsummary, testing, and a checklist linked directly to the policy.",
+          "timestamp": "2026-11-27T20:40:22+08:00",
+          "tree_id": "caeae597b2131d147937d22344e2cdda4333861d",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/e39fa809575a48d7ab88a81a4277ef14f8d69680"
+        },
+        "date": 1795783400505,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 828592,
+            "range": "± 13392",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11064051,
+            "range": "± 161693",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 663876,
+            "range": "± 11766",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1626282,
+            "range": "± 22836",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 467359,
+            "range": "± 2452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1138221,
+            "range": "± 14259",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3035247,
+            "range": "± 9713",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1942050,
+            "range": "± 35591",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1110795,
+            "range": "± 20705",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 15152,
+            "range": "± 98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 838935,
+            "range": "± 7403",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 9393034,
+            "range": "± 126796",
             "unit": "ns/iter"
           }
         ]
