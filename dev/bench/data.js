@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795783488715,
+  "lastUpdate": 1795790649772,
   "repoUrl": "https://github.com/typstyle-rs/typstyle",
   "entries": {
     "Rust Benchmark": [
@@ -24989,6 +24989,120 @@ window.BENCHMARK_DATA = {
             "name": "typst-docs/all",
             "value": 9451838,
             "range": "± 206985",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "quadnucyard@gmail.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "committer": {
+            "email": "50077758+QuadnucYard@users.noreply.github.com",
+            "name": "QuadnucYard",
+            "username": "QuadnucYard"
+          },
+          "distinct": true,
+          "id": "2d23c674f6cc140499b47c647a7407fede99b3ae",
+          "message": "fix(markup): detect sentence boundaries across inline markup\n\nSentence modes segmented each text node on its own, so emphasis and\nquote delimiters hid the surrounding context: breaks landed inside\nsentences and after abbreviations. Analyze the contiguous prose run with\nICU, mapping its boundaries back to the nodes layout emits.\n\nNested emphasis shares the enclosing plan, and a break at a wrapper\nedge starts the wrapper on a new line instead of splitting its\ndelimiters. Breaks replace editable whitespace, allow adjacent CJK\nsentences to separate without a space, and leave nonbreaking joins,\nline-sensitive markup, labels, and attached `\\` with their sentence. Raw\nliterals and equations contribute context only; at opaque edges the\npreceding prose's terminal punctuation decides the fallback.\n\nAvoid rescanning long runs by inspecting only a marker-shaped prefix\nand an abbreviation-sized suffix.",
+          "timestamp": "2026-11-27T22:40:41+08:00",
+          "tree_id": "a2ec3c2beb16c5a32537cad1623e7293d7d9ff2e",
+          "url": "https://github.com/typstyle-rs/typstyle/commit/2d23c674f6cc140499b47c647a7407fede99b3ae"
+        },
+        "date": 1795790649226,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "pretty-undergraduate-math",
+            "value": 845906,
+            "range": "± 11424",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cpe",
+            "value": 11409192,
+            "range": "± 605958",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-cetz-manual",
+            "value": 678203,
+            "range": "± 15433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-codly",
+            "value": 1668703,
+            "range": "± 34742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-diagram",
+            "value": 475930,
+            "range": "± 3735",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-fletcher-draw",
+            "value": 1172784,
+            "range": "± 21918",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-tablex",
+            "value": 3113041,
+            "range": "± 23157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-core",
+            "value": 1998686,
+            "range": "± 16454",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-touying-utils",
+            "value": 1134927,
+            "range": "± 26489",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-deep-nested-args",
+            "value": 14916,
+            "range": "± 102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "pretty-ai-comprehensive-showcase",
+            "value": 842302,
+            "range": "± 6506",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/all",
+            "value": 9537668,
+            "range": "± 196947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/wrap/fill",
+            "value": 15930868,
+            "range": "± 232442",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/wrap/sentence",
+            "value": 13948469,
+            "range": "± 684019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "typst-docs/wrap/fill-sentence",
+            "value": 20466553,
+            "range": "± 290133",
             "unit": "ns/iter"
           }
         ]
